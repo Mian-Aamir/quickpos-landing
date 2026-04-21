@@ -186,5 +186,115 @@
     </div>
 </section>
 
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-header">
+            <span class="section-badge">📧 Get In Touch</span>
+            <h2>We'd Love to Hear From You</h2>
+            <p>Have questions? Send us a message and we'll respond within 24 hours.</p>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>123 Business Avenue,<br>Tech Valley, CA 94025</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567<br>Mon-Fri, 9am-6pm</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>support@quickpos.com<br>sales@quickpos.com</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm" action="thankyou.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-msg" id="subjectError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Validation -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    let isValid = true;
+    
+    // Clear previous errors
+    document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+    
+    // Name validation
+    const name = document.getElementById('name').value.trim();
+    if (name === '') {
+        document.getElementById('nameError').textContent = 'Please enter your name';
+        isValid = false;
+    }
+    
+    // Email validation
+    const email = document.getElementById('email').value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === '') {
+        document.getElementById('emailError').textContent = 'Please enter your email';
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email address';
+        isValid = false;
+    }
+    
+    // Subject validation
+    const subject = document.getElementById('subject').value.trim();
+    if (subject === '') {
+        document.getElementById('subjectError').textContent = 'Please enter a subject';
+        isValid = false;
+    }
+    
+    // Message validation
+    const message = document.getElementById('message').value.trim();
+    if (message === '') {
+        document.getElementById('messageError').textContent = 'Please enter your message';
+        isValid = false;
+    } else if (message.length < 10) {
+        document.getElementById('messageError').textContent = 'Message must be at least 10 characters';
+        isValid = false;
+    }
+    
+    if (!isValid) {
+        e.preventDefault();
+    }
+});
+</script>
+
 </body>
 </html>
