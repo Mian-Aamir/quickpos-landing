@@ -367,3 +367,151 @@ body {
     color: #6b7280;
     line-height: 1.7;
 }
+
+/* PRICING SECTION */
+.pricing {
+    padding: 100px 20px;
+    background: #f0f4ff;
+}
+
+.pricing-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1e1b4b;
+    margin: 20px 0 15px;
+}
+
+.pricing-header p {
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover {
+    border-color: #4f46e5;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(79,70,229,0.1);
+}
+
+.pricing-card.popular {
+    background: #1e1b4b;
+    transform: scale(1.05);
+    box-shadow: 0 25px 60px rgba(79,70,229,0.3);
+}
+
+.popular-badge {
+    background: #4f46e5;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.plan-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e1b4b;
+    margin-bottom: 10px;
+}
+
+.popular .plan-name {
+    color: white;
+}
+
+.plan-price {
+    font-size: 52px;
+    font-weight: 800;
+    color: #4f46e5;
+    margin: 15px 0;
+}
+
+.popular .plan-price {
+    color: #a5b4fc;
+}
+
+.plan-price span {
+    font-size: 18px;
+    color: #9ca3af;
+}
+
+.plan-desc {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.popular .plan-desc {
+    color: #9ca3af;
+}
+
+.plan-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: #444;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.popular .plan-features li {
+    color: #d1d5db;
+    border-bottom-color: #374151;
+}
+
+.plan-btn {
+    display: block;
+    background: #f0f4ff;
+    color: #4f46e5;
+    padding: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.plan-btn:hover {
+    background: #4f46e5;
+    color: white;
+}
+
+.popular-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+.popular-btn:hover {
+    background: #3730a3;
+}

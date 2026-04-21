@@ -123,5 +123,68 @@
     </div>
 </section>
 
+<!-- PRICING SECTION -->
+<section class="pricing" id="pricing">
+    <div class="pricing-container">
+        <div class="pricing-header">
+            <span class="section-badge">💰 Simple Pricing</span>
+            <h2>Choose Your Perfect Plan</h2>
+            <p>No hidden fees. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+
+            <!-- Basic -->
+            <div class="pricing-card">
+                <div class="plan-name">Basic</div>
+                <div class="plan-price">$9<span>/mo</span></div>
+                <p class="plan-desc">Perfect for small businesses just getting started</p>
+                <ul class="plan-features">
+                    <li>✅ 1 Register</li>
+                    <li>✅ Basic Inventory</li>
+                    <li>✅ 50 Products</li>
+                    <li>✅ Email Support</li>
+                    <li>❌ Analytics</li>
+                    <li>❌ Multi Location</li>
+                </ul>
+                <a href="#" class="plan-btn">Get Started</a>
+            </div>
+
+            <!-- Pro -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">⭐ Most Popular</div>
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">$29<span>/mo</span></div>
+                <p class="plan-desc">For growing businesses that need more power</p>
+                <ul class="plan-features">
+                    <li>✅ 5 Registers</li>
+                    <li>✅ Advanced Inventory</li>
+                    <li>✅ Unlimited Products</li>
+                    <li>✅ Priority Support</li>
+                    <li>✅ Sales Analytics</li>
+                    <li>❌ Multi Location</li>
+                </ul>
+                <a href="#" class="plan-btn popular-btn">Get Started</a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="pricing-card">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-price">$99<span>/mo</span></div>
+                <p class="plan-desc">For large businesses with advanced needs</p>
+                <ul class="plan-features">
+                    <li>✅ Unlimited Registers</li>
+                    <li>✅ Advanced Inventory</li>
+                    <li>✅ Unlimited Products</li>
+                    <li>✅ 24/7 Support</li>
+                    <li>✅ Sales Analytics</li>
+                    <li>✅ Multi Location</li>
+                </ul>
+                <a href="#" class="plan-btn">Get Started</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
