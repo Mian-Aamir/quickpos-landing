@@ -90,5 +90,38 @@
     </div>
 </section>
 
+<!-- FEATURES SECTION -->
+<section class="features" id="features">
+    <div class="features-container">
+        <div class="features-header">
+            <span class="section-badge">✨ Why QuickPOS?</span>
+            <h2>Everything You Need to Run Your Business</h2>
+            <p>Powerful features designed for modern businesses of all sizes</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📦</div>
+                <h3>Inventory Management</h3>
+                <p>Track your stock in real-time. Get low stock alerts and never run out of your best-selling products again.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Sales Analytics</h3>
+                <p>Get detailed insights into your sales performance with beautiful charts and downloadable reports.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Easy Integration</h3>
+                <p>Connect with your favorite tools like Shopify, WooCommerce, and accounting software seamlessly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h3>Multiple Payments</h3>
+                <p>Accept cash, cards, and digital wallets. Give your customers the flexibility they deserve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
