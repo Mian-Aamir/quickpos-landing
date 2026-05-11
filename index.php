@@ -14,7 +14,7 @@
     <div class="nav-container">
         <div class="logo">
             <i class="fas fa-cash-register"></i>
-            <span>QuickPOS</span>
+            <span>QuickPOSNew</span>
         </div>
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
